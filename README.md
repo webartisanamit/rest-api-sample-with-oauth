@@ -44,35 +44,35 @@ The standard REST operations are mapped to a series of simple functions. We'll u
 
 To retrieve all profiles:<br>
 $profile = $lib->profiles()->all();
-<br>
+<br><br>
 To retrieve profiles with filter:<br>
 $profiles = $lib->profiles()->filter('country_id', '=', 42)->all();
-<br>
+<br><br>
 To retrieve profiles with include:<br>
 $profiles = $lib->profiles()->include('customers')->all();
-<br>
+<br><br>
 To retrieve a single profile:<br>
 $profile = $lib->profiles()->find($profileId);
-<br>
+<br><br>
 To query only completed profile:<br>
 $profile = $lib->profiles()->where('email', 'example@gmail.com')->get();
-<br>
+<br><br>
 $attributes = [<br>
     'name' => 'profile name',<br>
     'email' => 'example@gmail.com'<br>
 ];<br>
-
+<br>
 To create a profile:<br>
 $profile = $lib->profiles()->create($attributes);
-<br>
+<br><br>
 To update a profile:<br>
 $profile = $lib->profiles()->update($attributes, $profileId);
-<br>
+<br><br>
 To upload a file<br>
 $profile = $lib->profiles()->upload([<br>
    'id' => $profileId,<br>
    'file' => $filePath<br>
-]);<br>
+]);<br><br>
 
 And finally, to delete the profile:<br>
 $lib->profiles()->delete(1);
