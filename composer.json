@@ -1,0 +1,26 @@
+{
+    "name": "apisample/api-lib",
+    "description": "Api library for sample",
+    "type": "library",
+    "license": "mit",
+    "version": "1.0.0",
+    "authors": [
+        {
+            "name": "Sample Team",
+            "email": "amit.webartisan@gmail.com"
+        },
+        {
+            "name": "Sample",
+            "email": "amit.webartisan@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.0.0",
+        "ext-curl": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Library\\": "src/Library/"
+        }
+    }
+}
