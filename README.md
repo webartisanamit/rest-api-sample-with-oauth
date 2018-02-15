@@ -38,9 +38,9 @@ if ($lib->getToken()) {<br>
 --------------------------------------------------------------------------------
 ## Making REST Requests
 
-The PHP SDK is setup to allow easy access to REST endpoints. In general, a single result is returned as a Class representing that object, and multiple objects are returned as an FrilansInternational Collection, which is simply a wrapper around an array of results making them easier to manage.
+The PHP SDK is setup to allow easy access to REST endpoints. In general, a single result is returned as a Class representing that object, and multiple objects are returned as an Lib Collection, which is simply a wrapper around an array of results making them easier to manage.
 
-The standard REST operations are mapped to a series of simple functions. We'll use the Profile service for our examples, but the operations below work on all documented FrilansInternational REST services.
+The standard REST operations are mapped to a series of simple functions. We'll use the Profile service for our examples, but the operations below work on all documented Library REST services.
 
 To retrieve all profiles:<br>
 $profile = $lib->profiles()->all();
